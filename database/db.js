@@ -11,7 +11,7 @@ const Connection=async ()=>{
         await mongoose.connect(url,{useUnifiedTopology:true});
         console.log("database connected...")
     }catch(e){
-        console.log("datbase..".error.message);
+        console.log("database..",e.message);
 
     }
 }
